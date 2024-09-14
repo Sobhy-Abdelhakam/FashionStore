@@ -6,32 +6,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion Store</title>
+    <style>
+        body {
+            background-color: rgba(128, 128, 128, 0.397);
+            margin: 0;
+        }
+        header {
+            background-color: white;
+        }
+        header h1 {
+            background-color: blueviolet;
+            color: white;
+            margin: 0;
+            padding: 15px;
+            text-align: center;
+        }
+        .categories {
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .categories div {
+            align-items: center;
+        }
+        .categories div a {
+            color: black;
+            text-decoration: none;
+        }
+        .categories div img {
+            background-color: brown;
+            width: 70px;
+        }
+        .categories div a:hover {
+            color: blueviolet;
+        }
+        .shopingimage {
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+            width: 90%;
+        }
+        .salestitle {
+            text-align: center;
+        }
+        table {
+            width: 90%;
+        }
+        table, th, td {
+            margin: auto;
+            border: 1px solid gray;
+            border-collapse: collapse;
+            padding: 12px;
+        }
+        thead {
+            background-color: blueviolet;
+        }
+        th {
+            width: 25%;
+        }
+        .information {
+            background-color: white;
+            color: gray;
+            margin-top: 18px;
+            padding: 20px;
+        }
+        .information p, ul {
+            font-size: smaller;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            padding: 18px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <h1>FASHION STORE</h1>
-        <div>
+        <div class="categories">
             <div>
-                <img src="images/tshirt.jpeg" alt="tshirt" width="70">
+                <img src="images/tshirt.jpeg" alt="tshirt">
                 <a href="#">
                     <h4>T-Shirt</h4>
                 </a>
             </div>
             <div>
-                <img src="images/sunglasses.jpeg" alt="tshirt" width="70">
+                <img src="images/sunglasses.jpeg" alt="tshirt">
                 <a href="#">
                     <h4>sun glasses</h4>
                 </a>
             </div>
             <div>
-                <img src="images/shirts.jpeg" alt="tshirt" width="70">
+                <img src="images/shirts.jpeg" alt="tshirt">
                 <a href="#">
                     <h4>shirts</h4>
                 </a>
             </div>
             <div>
-                <img src="images/shoes.jpeg" alt="shoes" width="70">
+                <img src="images/shoes.jpeg" alt="shoes">
                 <a href="#">
                     <h4>Shoes</h4>
                 </a>
@@ -51,9 +126,10 @@
         </div>
     </header>
 
-    <img src="images/shopingtime.jpeg" alt="shoping time" width="100%">
+    <main>
+        <img class="shopingimage" src="images/shopingtime.jpeg" alt="shoping time">
 
-    <h2>OUR UPCOMING SALES</h2>
+    <h2 class="salestitle">OUR UPCOMING SALES</h2>
 
     <table>
         <thead>
@@ -92,7 +168,7 @@
         </tbody>
     </table>
 
-    <div>
+    <div class="information">
         <h2>Fashion Store: The One-stop Fashion Destination</h2>
         <p>
             Stepping out and finding a perfect fashion choice is difficult? Why worry when you have your own Fashion
@@ -133,6 +209,8 @@
             cash to our partner who will be delivering your cloth at your doorstep.
         </p>
     </div>
+    </main>
+
     <footer>© 2014-2025 FashionStore.com</footer>
 </body>
 
